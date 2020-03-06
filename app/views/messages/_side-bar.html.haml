@@ -1,0 +1,19 @@
+.side-bar
+  .side-header
+    .side-header-box
+      %p.side-header-box_name
+        name
+    .side-header-box_menu
+      %span<>
+      = link_to "######", class: "btn__new__group" do
+        = icon('fa', 'edit',  class: "contents__btn--icon")
+      %span<>
+      = link_to "####", class: "btn__config" do
+        = icon('fa', 'cog',  class: "contents__btn--icon")
+  .groups
+    .groups__group
+      %p.groups__group_name
+        tech camp
+      %p.groups__group_latest-message
+        testtest
+        
