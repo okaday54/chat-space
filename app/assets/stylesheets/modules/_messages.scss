@@ -20,7 +20,7 @@ $b: #38aef0;
       align-items: center;
       display: flex;
       padding: 0 20px;
-      .side-header-box{
+      &-box{
         height: 20px;
         width: 260px;
         line-height: 20px;
@@ -51,7 +51,7 @@ $b: #38aef0;
       height: calc(100vh - 100px);
       background-color: #2f3e51;
       padding: 20px 20px 0;
-      .groups__group{
+      &__group{
         margin-bottom: 40px;
         &_name{
           font-size: 15px;
@@ -74,7 +74,7 @@ $b: #38aef0;
       padding: 0 40px;
       display: flex;
       
-      .main-header__left-box{
+      &__left-box{
         margin-top: 35px;
         &__current-group{
           font-size: 20px;
