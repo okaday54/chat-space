@@ -2,11 +2,8 @@
   .main-header
     .main-header__left-box
       %h.main-header__left-box__current-group
-        tech camp
       %ul.main-header__left-box__member-list
-        member :  
         %li.main-header__left-box__member-list__member
-          okaday
     %a<>
     = link_to "######", class: "edit-link" do
       .main-header__edit-btn
@@ -15,18 +12,15 @@
     .message
       .message__upper-info
         %p.message__upper-info__talker
-          okaday
         %p.message__upper-info__date
-          2020.3/6
       .message__text
-        texttexttext
   .form
     .new-message
       .input-box
         %input.input-box_text{ type: "text", placeholder: "type a message" }
         %label.input-box_image{ for: "message-image"}
           =icon('fa', 'image')
-          %input.input-box_image-file{ type: "file", id: "message-image"}
-      %input.submit-btn{ type: "submit", value: "send"}
+          %input.input-box_image-file{ type: "file", id: "message-image" }
+      %input.submit-btn{ type: "submit", value: "send" }
 
       

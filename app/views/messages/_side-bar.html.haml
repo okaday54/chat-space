@@ -2,18 +2,18 @@
   .side-header
     .side-header-box
       %p.side-header-box_name
-        name
+        = current_user.name
     .side-header-box_menu
-      %span<>
-      = link_to "######", class: "btn__new__group" do
-        = icon('fa', 'edit',  class: "contents__btn--icon")
-      %span<>
-      = link_to "####", class: "btn__config" do
-        = icon('fa', 'cog',  class: "contents__btn--icon")
+      = link_to new_group_path do
+        = icon('fa', 'edit',  class: "btn__new__group")
+      = link_to edit_user_path(current_user) do
+        = icon('fas', 'cog', class: 'btn__config')
   .groups
-    .groups__group
-      %p.groups__group_name
-        tech camp
-      %p.groups__group_latest-message
-        testtest
-        
+    - current_user.groups.each do |group|
+      .groups__group
+        = link_to '#' do
+          .groups__group_name
+            = group.name
+          .groups__group_latest-message
+            メッセージはまだありません。
+          
