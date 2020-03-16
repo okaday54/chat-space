@@ -57,10 +57,12 @@ $b: #38aef0;
           font-size: 15px;
           color: $wh;
           padding-bottom: 5px;
+          text-decoration: none;
         }
         &_latest-message{
           font-size: 11px;
           color: $wh;
+          text-decoration: none;
         }
       }
     }

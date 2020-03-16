@@ -3,7 +3,7 @@ $(function(){
     if (message.content && message.image) {
 
       var html = 
-        `<div class = "message" data-message-id = message.id >
+        `<div class = "message" data-message-id = ${message.id} >
           <div class = "upper-message" >
             <div class = "upper-message__user-name" >
               ${message.user_name}
@@ -16,12 +16,12 @@ $(function(){
             <p class = "lower-message__content" >
               ${message.content}
             </p>
-            <img src = "message.image" class = "lower-message__image" >
+            <img src = "${message.image}" class = "lower-message__image" >
           </div>
         </div>`
     } else if (message.content) {
       var html = 
-        `<div class= "message" data-message-id = message.id >
+        `<div class= "message" data-message-id = ${message.id} >
           <div class = "upper-message" >
             <div class = "upper-message__user-name" >
               ${message.user_name}
@@ -38,7 +38,7 @@ $(function(){
         </div>`
     } else if (message.image) {
       var html = 
-        `<div class = "message" data-message-id = message.id >
+        `<div class = "message" data-message-id = ${message.id} >
           <div class = "upper-message" >
             <div class = "upper-message__user-name" >
               ${message.user_name}
